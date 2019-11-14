@@ -24,5 +24,3 @@ app.get('/', express(), function(req, res) {
 //ok, start the server and be ready!
 app.listen(3000);
 console.log("Listening at localhost:3000");
-
-mongoose.connect('mongodb+srv://ggfantacone:himralbinson@cluster0-vh0ja.mongodb.net/test?retryWrites=true&w=majority');
