@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <style>
+            body {
+                color: white;
+                font-family: Georgia;
+            }
+        </style>
+    </head>
+    <body background='wildwest.jpg'>
+        <table>
+            <% for (var i = 0; i < results.length; i++) { %>
+                <tr>
+                    <td><strong>User <%= i + 1 %>:</strong></td><br>
+                    <td>Name: <%= results[i].name %></td>
+                    <td>Username: <%= results[i].username %></td>
+                    <td>Password: <%= results[i].password %></td>
+                    <td>Favorite food: <%= results[i].favoriteFood %></td>
+                    <td>Age: <%= results[i].age %></td>
+                    <td>Favorite songs:</td>
+                </tr>
+                <% for (var j = 0; j < results[i].songs.length; j++) { %>
+                <tr>
+                    <td><%= results[i].songs[j].title %></td>
+                    <td><%= results[i].songs[j].artist %></td>
+                    <td><%= results[i].songs[j].year %></td>
+                    <td><%= results[i].songs[j].genre %></td>
+                </tr>
+                <% } %>
+            <% } %>
+        </table>
+    </body>
+</html>

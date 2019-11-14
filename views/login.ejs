@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        body {
+            background-color: #f55840;
+            font-family: Haettenschweiler;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        p {
+            color: red;
+        }
+
+        p, h1 {
+            text-align: center;
+        }
+
+        div {
+            margin: auto;
+        }
+    </style>
+</head>
+<body background="thing.webp">
+    <h1>Login to a special website</h1>
+    <div>
+        <form action="login" method="post">
+            <input type="text" name="username"><br>
+            <input type="password" name="password"><br><br>
+            <input type="submit">
+        </form>
+    </div>
+    <div id="output">
+        <p><%= error %></p>
+    </div>
+
+    <!--<input type="text" placeholder="New Username" id="newUser">
+    <input type="text" placeholder="New Password" id="newPass">
+    <button onclick="changeInfo()">Change Info</button>-->
+</body>
+</html>
